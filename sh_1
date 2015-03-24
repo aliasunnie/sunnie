@@ -1,0 +1,9 @@
+#!/bin/bash
+count=`cat halo|wc -l`
+while [ $count -lt 100000 ]
+do
+   cat thalo>>halo
+   cat helo>>halo
+   count=$[ count + 1 ]
+done
+echo "`cat halo|wc -l`"
